@@ -1,21 +1,22 @@
-function echo() {
-	
+function echo(input) {
+	return input;
 }
 
-function shout() {
-	
+function shout(input) {
+	return input.toUpperCase();
 }
 
-function repeat() {
-
+function repeat(input) {
+	return `${input} ${input}`;
 }
 
-function pieceOfWord() {
-	
+function pieceOfWord(word, piece) {
+	return word.substring(0, piece);
 }
 
-function firstWord() {
-	
+function firstWord(string) {
+	words = string.split(' ');
+	return words[0];
 }
 
 function capitalize(word) {
@@ -23,8 +24,14 @@ function capitalize(word) {
 	// This function just capitalizes the word given to it, use in conjunction with titleCreator
 }
 
-function titleCreator() {
-	
+function titleCreator(string) {
+	words = string.split(' ');
+	for (let i = 0; i < words[i]; i++) {
+		if (i = 0 || word.length >= 4)
+		return capitalize(word);
+	} else {
+		return word;
+	}
 }
 
 module.exports = {
